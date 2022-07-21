@@ -44,5 +44,12 @@ Download prepared a recent ESRI basemap from here: https://disk.yandex.ru/d/beHm
 ### Main file
 Hakaton_Permyakov_final_project.ipynb is a Jupyter notebook. Start it.
 
+### Main parameters
+
+Recommended values of parameters provided a final metrics are as follows:
+* scale_factor = 8
+* stride = 2
+* angle_step = 1
+
 ### Appreciation
 Thanks to @boangri for code ideas.
