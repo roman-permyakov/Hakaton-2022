@@ -9,8 +9,10 @@
 In the modern world, a huge number of tasks are solved with the help of satellite and aerial images.
 Often, the speed and quality of interpreting these data depends on how quickly fires, floods
 and other emergencies are detected.
+
 Unfortunately, machine vision technologies are on the first stage of being implemeted to solve such tasks,
 but the need for them is constantly growing.
+
 The solution of this problem will allow to quickly connect images with geographical coordinates,
 speed up geodetic works, quickly search for the missing people, and control deforestation.
 ```
@@ -19,16 +21,15 @@ speed up geodetic works, quickly search for the missing people, and control defo
 
 ```shell
 For a better understanding of the context, let's clarify the following terms:
+```
 
-* Basemap is an extremely large image with a geographical reference to the terrain,
-i.e. the coordinates of basemap' each pixel are known or they can be calculated.
+* Basemap is an extremely large image with a geographical reference to the terrain.
+
 * Aerial image is an image captured by a satellite, UAV, or the aircraft.
-It has a significantly lower resolution compared to the basemap.
-The main feature is that compared to the basemap the aerial image was taken in other time of the year,
-or even in a completely different year, and at different heights.
-* Overlap - the position of images in which the same area of the basemap is visible
-on two or more aerial images. Mutual orientation of multi-temporal images can be done by operator manually.
 
+* Overlap - the position of images in which the same area of the basemap is visible on two images.
+
+```shell
 The purpose of the challenge is to find a location and orientation of the image relative to the basemap.
 ```
 
