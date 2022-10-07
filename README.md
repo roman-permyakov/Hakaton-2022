@@ -1,55 +1,39 @@
-# Hakaton
+######  Всероссийский чемпионат. Москва. ТОП-15 🏆
 
-# Digital Breakout 2022: artificial intelligence
+# **Цифровой прорыв 2022** <img src="https://hacks-ai.ru/_next/image?url=%2Fassets%2Flogos%2Flogo-horizontal.png&w=600&q=75" width="200"> <br>**Задача МФТИ**
 
-## MPTI Contest: Georeferencing aerial images to the basemap
+## [Привязка аэроснимков к местности](https://hacks-ai.ru/championships/758453)
 
-### Introduction
+### Введение
 ```shell
-In the modern world, a huge number of tasks are solved with the help of satellite and aerial images.
-Often, the speed and quality of interpreting these data depends on how quickly fires, floods
-and other emergencies are detected.
+В современном мире огромное количество задач решается с помощью спутниковых фотографий и аэрофотоснимков.
+Зачастую от скорости и качества интерпретации этих данных зависит то, как быстро выявляются пожары,
+наводнения и другие чрезвычайные ситуации. Технологии машинного зрения только начинают применяться
+в решении такого рода задач, однако потребность в их использовании постоянно растет.
 
-Unfortunately, machine vision technologies are on the first stage of being implemeted to solve such tasks,
-but the need for them is constantly growing.
+Решение данной задачи позволит оперативно привязывать изображения к географическим координатам,
+что в дальнейшем может ускорить геодезические работы, поможет оперативно искать пропавших людей,
+контролировать вырубку лесов. И это только краткий список того, где требуется привязка аэрофотоснимков к местности.
 
-The solution of this problem will allow to quickly connect images with geographical coordinates,
-speed up geodetic works, quickly search for the missing people, and control deforestation.
+Участникам чемпионата будет предложено найти местоположение и ориентацию снимка на крайне большом изображении 
+по высоте и ширине с географической привязкой к местности.
 ```
 
-### Conditions
+### Важные ссылки
 
-```shell
-For a better understanding of the context, let's clarify the following terms:
-```
+* Набор обучающих данных: https://lodmedia.hb.bizmrg.com/case_files/768820/train_dataset_train.zip
+* Набор тестовых данных: https://lodmedia.hb.bizmrg.com/case_files/768820/test_dataset_test.zip
+* Подложка ESRI: https://disk.yandex.ru/d/beHmDGZjzw_50A
 
-* Basemap is an extremely large image with a geographical reference to the terrain.
+### Основной файл
+Hakaton_Permyakov_final_project.ipynb - ноутбук в формате Jupyter/Colab
 
-* Aerial image is an image captured by a satellite, UAV, or the aircraft.
+### Базовые параметры
 
-* Overlap - the position of images in which the same area of the basemap is visible on two images.
-
-```shell
-The purpose of the challenge is to find a location and orientation of the image relative to the basemap.
-```
-
-### Important links
-
-```shell
-Download train dataset from here: https://lodmedia.hb.bizmrg.com/case_files/768820/train_dataset_train.zip
-Download test dataset from here: https://lodmedia.hb.bizmrg.com/case_files/768820/test_dataset_test.zip
-Download prepared a recent ESRI basemap from here: https://disk.yandex.ru/d/beHmDGZjzw_50A
-```
-
-### Main file
-Hakaton_Permyakov_final_project.ipynb is a Jupyter notebook. Start it.
-
-### Main parameters
-
-Recommended values of parameters provided a final metrics are as follows:
+Рекомендованные значения:
 * scale_factor = 8
 * stride = 2
 * angle_step = 1
 
-### Appreciation
-Thanks to @boangri for code ideas.
+### Благодарности
+@boangri
